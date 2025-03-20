@@ -1,3 +1,7 @@
 # Ignorar arquivos de ambiente
 .env
 .venv/
+# Ignorar arquivos no cache
+__pycache__
+# Ignorar arquivos da IDE
+.idea
