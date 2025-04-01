@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row height d-flex justify-content-center align-items-center">
+    <div class="col-md-8">
+      <div class="pesquisa">
+        <i class="fa fa-pesquisa"></i>
+        <input
+          type="text"
+          id="busca"
+          [(ngModel)]="pesquisa"
+          class="form-control"
+          placeholder="Digite o nome do livro que deseja encontrar recomendações"
+        />
+        <button class="btn btn-primary" (click)="listarRecomendacoes()">
+          Pesquisar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
