@@ -14,10 +14,20 @@ import {
   provideHttpClient,
   withFetch,
 } from '@angular/common/http';
+import { ListagemLivrosComponent } from './listagem-livros/listagem-livros.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
-  declarations: [AppComponent, BuscaComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  declarations: [AppComponent, BuscaComponent, ListagemLivrosComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    MatProgressSpinnerModule,
+    MatDialogModule,
+  ],
   providers: [
     provideHttpClient(withFetch()),
     provideClientHydration(withEventReplay()),
